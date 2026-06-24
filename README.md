@@ -23,7 +23,8 @@ This copies `search-sessions.md` to `~/.claude/commands/`. Restart VS Code or Cl
 ## Usage
 
 ```
-/search-sessions                        # list all sessions
+/search-sessions                        # asks what you're looking for
+/search-sessions all                    # list all sessions
 /search-sessions 2026-06-18             # sessions from a specific date
 /search-sessions watcher                # sessions mentioning "watcher"
 /search-sessions 2026-06-18 watcher     # combine date + keyword

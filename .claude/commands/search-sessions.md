@@ -25,7 +25,18 @@ Searches all `.jsonl` session files under `~/.claude/projects/`, filtering by da
 
 ## Instructions
 
-### 1. Parse arguments
+### 1. Check for arguments — ask if missing
+
+If `$ARGUMENTS` is empty or blank, **do not run the search yet**. Instead, ask the user:
+
+> No filter provided. What are you looking for?
+> - **Date** (e.g. `2026-06-18`, `2026-06`, `06-18`)
+> - **Keyword or topic** (e.g. `watcher`, `proximity alert`, `auth`)
+> - **Both** — or type `all` to list every session
+
+Wait for the user's reply and treat it as the new `$ARGUMENTS` before continuing.
+
+### 2. Parse arguments
 
 From `$ARGUMENTS`, identify:
 - **date filter**: any token that looks like a date (contains `-` and digits, e.g. `2026-06-18`, `06-18`, `2026-06`)
