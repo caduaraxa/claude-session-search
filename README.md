@@ -4,7 +4,9 @@ A [Claude Code](https://claude.ai/code) slash command (`/search-sessions`) that 
 
 ## Why
 
-Claude Code stores every conversation locally as `.jsonl` files under `~/.claude/projects/`. This skill makes that archive searchable and interactive without leaving your editor.
+If you use Claude agents in VS Code or via the Desktop/CLI app and find yourself creating dozens of sessions — only to forget which one covered a specific topic, decision, or the exact day you worked on something — this skill is for you.
+
+Claude Code stores every conversation locally as `.jsonl` files under `~/.claude/projects/`, but provides no built-in way to search them. This skill makes that archive fully searchable and interactive without leaving your editor. You can filter by date, keywords, topics, commit IDs, error messages, or any text that appeared in a conversation.
 
 ## Install
 
