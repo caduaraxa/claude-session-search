@@ -1,5 +1,5 @@
 # claude-session-search
-![Shell Script](https://img.shields.io/badge/language-shell%20script-121011?style=flat-square)
+[![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
 
 A [Claude Code](https://claude.ai/code) slash command (`/search-sessions`) that lets you search your local conversation history by **date**, **keyword**, or both — and load any session's full content to ask questions, get summaries, or compare decisions with your current code.
 
